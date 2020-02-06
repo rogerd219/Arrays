@@ -10,28 +10,27 @@ namespace Arrays
         static void Main(string[] args)
         {
 
-            try
-            {
+            
+                // Maximize array size
                 const int Size = 26;
 
+                // Populate array
                 int[] countdown = new int[Size];
+
                 Console.WriteLine("");
                 int pop_array = 0;
+
+                // Iterate array using a For loop
                 for (int i = 0; i < Size; i++)
                 {
                     countdown[i] = pop_array;
+                    // Display message with element number
                     Console.WriteLine(" Element value = " + i);
                 }
                 Console.WriteLine("");
                 Console.ReadKey(true);
-            }
-
-
-            catch
-            {
                 Console.WriteLine("Press any key to exit ...");
-                Console.ReadKey(true);
-            } 
+            
             }   
         }      
     }
